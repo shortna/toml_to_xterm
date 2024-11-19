@@ -22,7 +22,7 @@ def convert(content, prefix, n_rows):
         template += content[:whitespace] + " "
         hash = content.find("#")
         template += (19 - len(template)) * " "
-        template += content[hash:hash + 6] + "\n"
+        template += content[hash:hash + 7] + "\n"
         content = content[content.find('\n') + 1:]
         res += template
         n_rows -= 1;
