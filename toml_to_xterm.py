@@ -57,11 +57,6 @@ def main():
     if not os.path.exists(out):
         os.makedirs(out)
 
-    with open("/home/box/toml_to_xterm/alacritty-theme/themes/catppuccin_frappe.toml", 'r') as file:
-        content = file.read()
-        theme = convert_toml_to_xterm(content)
-        print(theme)
-
     for filename in os.listdir(input_dir):
         file_path = os.path.join(input_dir, filename)
         print(file_path)
